@@ -1,0 +1,47 @@
+---
+title: 'Create Placeholder'
+api: 'POST https://jsonplaceholder.typicode.com/posts'
+description: 'This endpoint creates a new placeholder'
+---
+
+### Body
+
+<ParamField body="title" type="string">
+This is the title of the body
+</ParamField>
+
+<ParamField body="body" type="string">
+This is the body of the user
+</ParamField>
+
+<ParamField body="userid" type="integer">
+This is the id of the user
+</ParamField>
+
+
+<RequestExample>
+
+```bash Request
+curl --request POST \
+  --url https://jsonplaceholder.typicode.com/posts \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "title": "foo",
+    "body": "bar",
+    "userId": "1",
+  }'
+  ```
+</RequestExample> 
+
+<ResponseExample>
+
+```json Response
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1,
+  "id": 101
+}
+```
+</ResponseExample> 
+
