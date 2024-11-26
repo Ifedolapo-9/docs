@@ -4,7 +4,21 @@ api: 'POST https://jsonplaceholder.typicode.com/posts'
 description: 'This endpoint creates a new placeholder'
 ---
 
-### Body
+### Request Body Parameters
+
+<ParamField body="title" type="string" required>
+This is the title of the body
+</ParamField>
+
+<ParamField body="body" type="string" optional>
+This is the body of the user
+</ParamField>
+
+<ParamField body="userid" type="integer" required>
+This is the id of the user
+</ParamField>
+
+### Response Body Parameters
 
 <ParamField body="title" type="string">
 This is the title of the body
