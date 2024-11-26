@@ -1,0 +1,28 @@
+---
+title: 'Remove User'
+api: 'DELETE https://jsonplaceholder.typicode.com/posts/1'
+description: 'This endpoint removes a userid'
+hideResponse: true
+---
+
+### Query Parameter
+
+<ParamField query="userid" type="number" required>
+This is the id of the user
+</ParamField>
+
+<RequestExample>
+```bash Request
+curl -X DELETE https://jsonplaceholder.typicode.com/posts/1 \
+  -H "Accept: application/json" \
+  -H "Content-Type: application/json"
+```  
+</RequestExample> 
+
+<ResponseExample>
+```json Response
+
+{}
+
+```
+</ResponseExample> 
